@@ -1,0 +1,95 @@
+print("\n\n\n")
+
+    # first I ask for an operation by input
+    # and I save this info in a variable 'operation'
+operation = input("Enter the operation ( + , - , * , / ): ")
+
+    # then I ask for 2 numbers by input
+    # I convert the input from string to int
+    # and then I save the obtained int in the variables
+number1 = int( input("Enter the first number : ") )
+
+number2 = int( input("Enter the second number : ") )
+
+
+    # This is the previous version without elif
+""" 
+if operation == '+' :
+    sum = str( number1 + number2 )
+    print( "The sum is : "+ sum)
+
+if operation == '-' :
+    sub = str( number1 - number2 )
+    print( "The sub is : "+ sub)
+
+if operation == '*' :
+    mul = str( number1 * number2 )
+    print( "The mul is : "+ mul)
+
+if operation == '/' :
+    div = str( number1 / number2 )
+    print( "The div is : "+ div)
+
+ """
+
+    # let's see now how do it using elif
+'''    
+    # at the beginning I check if the operation is '+'
+if operation == '+' :   
+            # in this case the operation is '+'
+            # I execute the sum and print it as a string
+    sum = str( number1 + number2 )  
+    print( "The sum is : "+ sum)
+
+elif operation == '-' :     # using elif I am continuing to check the same value
+                            # this check is connected with the previous one
+            # in this case the operation is '-'
+    sub = str( number1 - number2 )
+    print( "The sub is : "+ sub)
+
+elif operation == '*' :     # using elif I am continuing to check the same value
+                            # this check is connected with the previous ones
+            # in this case the operation is '*'
+    mul = str( number1 * number2 )
+    print( "The mul is : "+ mul)
+
+elif operation == '/' :     # using elif I am continuing to check the same value
+                            # this check is connected with the previous ones
+            # in this case the operation is '/'
+    div = str( number1 / number2 )
+    print( "The div is : "+ div)
+
+else :          # this else is connected with the previous checks
+            # in this case all che previous comparisons are 'False'
+    print( "The operation is not recognized ")
+    
+'''
+
+    # the resulting code is:
+
+if operation == '+' : 
+    sum = str( number1 + number2 )  
+    print( "The sum is : "+ sum)
+
+elif operation == '-' :     
+    sub = str( number1 - number2 )
+    print( "The sub is : "+ sub)
+
+elif operation == '*' :     
+    mul = str( number1 * number2 )
+    print( "The mul is : "+ mul)
+
+elif operation == '/' :     
+    div = str( number1 / number2 )
+    print( "The div is : "+ div)
+
+else :          
+    print( "The operation is not recognized ")
+    
+
+
+
+
+
+
+print("\n\n\n\n\n")

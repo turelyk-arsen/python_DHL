@@ -1,0 +1,40 @@
+print("\n\n\n")
+
+    # first I ask for an answer by input
+    # and I save this info in a variable 'answer'
+answer = input( "Did you have lunch today? ")
+
+    # I set a counter at 0
+counter = 0
+
+
+    # in a while loop I check the 'answer' value
+while answer != "yes" and answer != "no":
+    
+        # in this case the condition is True
+        # so the value is neither "yes" nor "no"
+    
+    print("Please answer 'yes' or 'no' ")
+
+        # I ask again!
+        # In this way the 'while condition' may change 
+        # If the condition never change, we have an endless loop
+    answer = input( "Did you have lunch today? ")
+    
+        # I increase the counter by one
+        # I am counting how many times I perform the loop
+    counter = counter + 1
+
+
+
+
+# here we are outside the while loop
+# I know it thanks to tabulation
+# So the 'while condition' became False 
+
+    # I can print more than 1 thing in one print
+    # just using the ','
+print(" I repeated " , counter , " times")
+
+
+print("\n\n\n\n\n")

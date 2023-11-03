@@ -1,0 +1,33 @@
+print("\n\n\n")
+
+        # At the beginning I create a dictionary
+my_dictionary = { 1: "one" , 2: "two" , 3: "three"  }
+
+        # the key value is an integer
+        # the other value is a string
+        
+print( my_dictionary )
+
+        # using the method ".keys()" I print all the keys
+print ( my_dictionary.keys() )
+
+        # using the method ".values()" I print all the values
+print ( my_dictionary.values() )
+
+        # I can print a specific value through the key
+print( my_dictionary[2] )
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+print("\n\n\n")

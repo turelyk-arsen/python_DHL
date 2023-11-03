@@ -1,0 +1,49 @@
+print("\n\n\n")
+
+        # first I create 2 dictionaries
+        # from letters to numbers. the key is the letter 
+        # and the value is the corrisponding number
+letters_numbers = {'a':'1' , 'b':'2' , 'c':'3' , 'd':'4' , 'e':'5' , 'f':'6' , 'g':'7' , 
+                   'h':'8' , 'i':'9' , 'j':'10' , 'k':'11' , 'l':'12' , 'm':'13' , 
+                   'n':'14' , 'o':'15' , 'p':'16' , 'q':'17' , 'r':'18' , 's':'19' , 
+                   't':'20' , 'u':'21' , 'v':'22' , 'w':'23' , 'x':'24' , 'y':'25' , 'z':'26'  }
+
+        # from numbers to letters. the key is the number 
+        # and the value is the corrisponding letter
+numbers_letters = { '0':'0', '1':'a' , '2':'b' ,'3':'c' ,'4': 'd','5': 'e',
+                   '6':'f' ,'7':'g' ,'8':'h' ,'9':'i'}
+
+
+        # the encrypted message is empty at the beginning
+        # I will build it 1 symbol at a time
+encrypted = ""
+
+        # I ask for the message to encrypt
+entered_text = input("Enter a text: ")
+
+
+
+for symbol in entered_text:         # I take all the symbols in the message 1 by 1
+    
+                    # if the symbol is in letters_numbers.keys() means is a letter
+                    # becouse means that the current char is one of the keys in letters_numbers
+    if symbol in letters_numbers.keys() :
+        encrypted += letters_numbers[symbol] + ' '  # So I add it in the encrypted string
+        
+                    # if the symbol is in numbers_letters.keys() means is a number 
+                    # becouse means that the current char is one of the keys in numbers_letters
+    elif symbol in numbers_letters.keys() :
+        encrypted += numbers_letters[symbol] + ' ' # So I add it in the encrypted string
+
+                    # else means is something else
+    else :
+        encrypted += symbol + ' '
+
+
+
+            #In the end I just print the resulting encrypted message
+print( "The encrypted message is: " , encrypted )
+
+
+
+print("\n\n\n")

@@ -1,0 +1,71 @@
+print("\n\n\n")
+
+
+    # at the beginning, the bill is 0
+bill = 0
+
+    # I create the variable 'execute'
+    # to check if the user wants to continue
+    
+    # at the beginning, 'execute' is True
+execute = True
+
+
+    # 'execute' is True by default
+    # So I perform the loop at least 1 time
+    # if 'execute' becomes False, the loop stops
+    
+while execute :
+    
+                # this is the menu
+    print( "\n      Menu      ")
+    print( "1 - pasta       6 ")
+    print( "2 - paeja       9 ")
+    print( "3 - white rice  5 ")
+    print( "4 - couscous    6 ")
+    print( "                  ")
+    print( "Bill - Pay and leave ")
+
+            # I ask for the order
+    dish = input( "Enter the order: ")
+
+
+    if dish == "1" or dish == "pasta":
+            # in this case the user wants the pasta
+        print( "You asked for pasta \n")
+        bill += 6
+        
+    elif dish == "2" or dish == "paeja":
+            # in this case the user wants the paeja
+        print( "You asked for paeja \n")
+        bill += 9
+        
+    elif dish == "3" or dish == "white rice" or dish == "rice":
+            # in this case the user wants the rice
+        print( "You asked for white rice \n")
+        bill += 5
+
+    elif dish == "4" or dish == "couscous":
+            # in this case the user wants the couscous
+        print( "You asked for couscous \n")
+        bill += 6
+    
+    elif dish == "bill" or dish == "Bill":
+            # in this case the user wants the bill
+        print( "You asked for the bill \n")
+        execute = False     # I want to stop the loop
+                            # So I set 'execute' as False
+    else:
+            # in this case the user entered something else
+        print( "It is not in the menu \n")
+
+
+
+# Here I am outside the loop!
+
+        # in the end I show the total to pay
+print( "Bill : " , bill)
+
+
+
+print("\n\n\n")

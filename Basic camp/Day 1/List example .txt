@@ -1,0 +1,32 @@
+print("\n\n\n")
+
+        # first I create an empty list and an empty string
+my_list = list()
+new_word = ""
+
+print("Here we create a list of 5 words!")
+print("Just enter a new word and see the resulting list")
+
+
+        # I want to add a new word and show the list 5 times
+        # So I can just use a for loop with a range 5
+for i in range(5):
+                            # inside the loop I ask for the new word
+    new_word = input( "new word: ")
+                            # then I add it in the list
+    my_list.append( new_word )
+                            # and still in the loop I show the list content
+    print( my_list )
+
+
+
+
+
+
+
+
+
+
+
+
+print("\n\n\n")
